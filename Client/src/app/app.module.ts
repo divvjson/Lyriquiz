@@ -14,6 +14,7 @@ import { TeamComponent } from './team/team.component';
 import { PlayComponent } from './play/play.component';
 import { AnswerComponent } from './answer/answer.component';
 import { GameOverComponent } from './game-over/game-over.component';
+import { LyricsComponent } from './lyrics/lyrics.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GameOverComponent } from './game-over/game-over.component';
     TeamComponent,
     PlayComponent,
     AnswerComponent,
-    GameOverComponent
+    GameOverComponent,
+    LyricsComponent
   ],
   imports: [
     BrowserModule,

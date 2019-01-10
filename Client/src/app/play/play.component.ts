@@ -34,6 +34,7 @@ export class PlayComponent implements OnInit {
   getQuestion() {
     this.questionService.getQuestion().subscribe((response: Question) => {
       this.question = response;
+      this.questionService.setQuestion(this.question);
       console.log(this.question);
     }, error => console.log(error),
       () => this.generateQuestion());

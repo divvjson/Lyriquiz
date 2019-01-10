@@ -1,0 +1,7 @@
+textarea {
+    background-color: transparent;
+    border: none;
+    color: white;
+    overflow: hidden;
+    white-space: pre-line;
+}
