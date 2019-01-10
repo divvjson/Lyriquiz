@@ -4,7 +4,13 @@
     <div class="after"></div>
   </div>
 
-  <h1 class="text-center">
-    Congratulations Team {{winningTeam.color}} !
-  </h1>
+  <ul class="list-group">
+    <li class="list-group-item" (click)="showTeamDetails(winningTeam)" [ngStyle]="{'background-color':winningTeam.color}">
+      Team: {{ winningTeam.color }} won! Congratulations!
+    </li>
+  </ul>
+
+  <div class="text-center">
+    <a routerLink="/"><button class="btn btn-lg play" type="button" (click)="onPlayAgain()">Play Again?</button></a>
+  </div>
 </div>

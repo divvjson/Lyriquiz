@@ -57,4 +57,10 @@ export class TeamService {
       }
     }
   }
+
+  resetScore() {
+    for (var i = 0; i < this.teams.length; i++) {
+      this.teams[i].score = 0;
+    }
+  }
 }

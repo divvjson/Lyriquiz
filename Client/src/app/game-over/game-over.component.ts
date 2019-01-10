@@ -32,4 +32,8 @@ export class GameOverComponent implements OnInit {
       }
     }
   }
+
+  onPlayAgain() {
+    this.teamService.resetScore();
+  }
 }

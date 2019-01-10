@@ -213,8 +213,17 @@
       margin-left: 80%;
     }
   }
-
   
-h1 {
+.list-group-item {
     margin-top: 25%;
+    margin-left: 25%;
+    width: 50%;
+    font-size: 32px;
+    text-align: center;
+}
+
+.play {
+  margin-top: 35px;
+  background-color: white;
+  border: none;
 }

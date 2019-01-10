@@ -108,6 +108,7 @@ export class PlayComponent implements OnInit {
     let dialogRef = this.answerDialog.open(AnswerComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(x => {
       if (this.isGameOver()) {
+        this.questionService.setQuestion(null);
         this.router.navigate(['game-over']);
       } else {
         this.getQuestion();
