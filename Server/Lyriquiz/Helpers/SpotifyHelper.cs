@@ -3,7 +3,7 @@ using SpotifyAPI.Web.Auth;
 using SpotifyAPI.Web.Models;
 using System.Threading.Tasks;
 
-namespace Lyriquiz1.Helpers
+namespace Lyriquiz.Helpers
 {
     public sealed class SpotifyHelper
     {

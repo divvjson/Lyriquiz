@@ -1,11 +1,11 @@
-﻿using Lyriquiz1.Helpers;
+﻿using Lyriquiz.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Lyriquiz1
+namespace Lyriquiz
 {
     public class Startup
     {

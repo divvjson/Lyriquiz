@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
-using Lyriquiz1.Helpers;
+using Lyriquiz.Helpers;
 using Microsoft.AspNetCore.Mvc;
 using SpotifyAPI.Web.Models;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
-using Lyriquiz1.Models;
+using Lyriquiz.Models;
 using System;
 using System.Text.RegularExpressions;
 
-namespace Lyriquiz1.Controllers
+namespace Lyriquiz.Controllers
 {
     [Route("api/[controller]")]
     public class QuestionController : Controller

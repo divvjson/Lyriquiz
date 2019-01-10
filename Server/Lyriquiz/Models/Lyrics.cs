@@ -1,4 +1,4 @@
-﻿namespace Lyriquiz1.Models
+﻿namespace Lyriquiz.Models
 {
     public class Lyrics
     {
