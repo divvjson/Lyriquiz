@@ -1,0 +1,20 @@
+.start-container {
+    margin: auto;
+    text-align: center;
+}
+
+.list-group-item {
+    color: rgb(108, 117, 125);
+    width: 35%;
+    margin: auto;
+}
+
+.play {
+    background-color: white;
+    border: none;
+}
+
+.form-control {
+    width: 35%;
+    margin: auto;
+}

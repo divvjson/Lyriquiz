@@ -1,0 +1,30 @@
+<div class="start-container">
+  <h1 class="text-center">LyriQuiz</h1>
+
+  <form (ngSubmit)="onCreateTeam()" autocomplete="off">
+    <div class="form-group">
+      <input [(ngModel)]="member" name="member" type="text" class="form-control" placeholder="Name">
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-primary" type="button" (click)="add(member)" [disabled]="!member">Add</button>
+      <button class="btn btn-danger ml-2" type="button" (click)="remove(selected)" [disabled]="selected == undefined || members.length == 0">Remove</button>
+    </div>
+
+    <div class="form-group">
+      <ul class="list-group">
+        <li class="list-group-item" [class.active]="selected === i" (click)="setSelected(i)" *ngFor="let member of members; let i = index">
+          {{ member }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-success" type="submit" [disabled]="members.length == 0">Create Team</button>
+    </div>
+  </form>
+
+  <div class="text-center">
+    <a routerLink="/play"><button class="btn btn-lg play" type="button" [disabled]="!sufficientAmountOfTeams()">Play</button></a>
+  </div>
+</div>

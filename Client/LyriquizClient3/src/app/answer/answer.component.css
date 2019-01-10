@@ -1,0 +1,9 @@
+li {
+    cursor: pointer;
+    color: white;
+    transition: all .20s ease-out;
+}
+
+li:hover {
+    transform: scale(1.05);
+}

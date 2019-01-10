@@ -1,0 +1,16 @@
+<h3>Team {{ team.color }}</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Members</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let member of team.members">
+      <td>{{ member }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button class="btn btn-danger" (click)="onDeleteTeam(team.color)">Delete Team</button>

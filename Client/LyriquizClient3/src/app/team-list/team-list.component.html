@@ -1,0 +1,8 @@
+<h1>Teams</h1>
+
+<ul class="list-group">
+  <li class="list-group-item" (click)="showTeamDetails(team)" [ngStyle]="{'background-color':team.color}" *ngFor="let team of teams">
+    Team: {{ team.color }}
+    Score: {{ team.score }} / 5
+  </li>
+</ul>

@@ -1,0 +1,18 @@
+<div class="container text-center">
+  <iframe [src]="getSpotifyUrl()" frameborder="0" width="250" height="80" allowtransparency="true" allow="encrypted-media"></iframe>
+
+  <div *ngIf="correctAnswer; else wrongAnswer">
+    <p>{{ question.Artist }} is correct!</p>
+  </div>
+
+  <ng-template #wrongAnswer>
+    <p>Nope that's wrong! {{ question.Artist }} is correct...</p>
+  </ng-template>
+
+  <h4>Who answered?</h4>
+  <ul class="list-group">
+    <li class="list-group-item" (click)="onTeamAnswered(team)" [ngStyle]="{'background-color':team.color}" *ngFor="let team of teams">
+      Team: {{ team.color }}
+    </li>
+  </ul>
+</div>
