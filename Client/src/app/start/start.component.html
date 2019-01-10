@@ -25,6 +25,6 @@
   </form>
 
   <div class="text-center">
-    <a routerLink="/play"><button class="btn btn-lg play" type="button" [disabled]="!sufficientAmountOfTeams()">Play</button></a>
+    <a routerLink="/play"><button class="btn btn-lg play" type="button" [disabled]="!sufficientAmountOfTeams()" (click)="onPlay()">Play</button></a>
   </div>
 </div>

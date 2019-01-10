@@ -104,12 +104,12 @@ namespace Lyriquiz.Controllers
 
             TuneableTrack minValues = new TuneableTrack
             {
-                Popularity = 80
+                Popularity = 70
             };
 
             TuneableTrack maxValues = new TuneableTrack
             {
-                Popularity = 95
+                Popularity = 100
             };
             
             return SpotifyHelper.Instance.Api.GetRecommendations(genreSeed: genreSeed, limit: 1, market: "SE", min: minValues, max: maxValues);

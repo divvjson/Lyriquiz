@@ -1,3 +1,4 @@
+import { QuestionService } from './../../services/question.service';
 import { Component, OnInit } from '@angular/core';
 import { TeamService } from 'src/services/team.service';
 
@@ -12,7 +13,7 @@ export class StartComponent implements OnInit {
   members: string[];
   selected: number;
 
-  constructor(private teamService: TeamService) {
+  constructor(private teamService: TeamService, private questionService: QuestionService) {
     this.members = [];
   }
 
@@ -44,5 +45,9 @@ export class StartComponent implements OnInit {
     } else {
       return false;
     }
+  }
+
+  onPlay() {
+    this.questionService.isGameOn = true;
   }
 }

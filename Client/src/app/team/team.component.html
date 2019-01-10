@@ -13,4 +13,4 @@
   </tbody>
 </table>
 
-<button class="btn btn-danger" (click)="onDeleteTeam(team.color)">Delete Team</button>
+<button class="btn btn-danger" (click)="onDeleteTeam(team.color)" [disabled]="isGameOn()">Delete Team</button>

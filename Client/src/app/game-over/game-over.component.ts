@@ -1,3 +1,4 @@
+import { QuestionService } from './../../services/question.service';
 import { TeamService } from 'src/services/team.service';
 import { Component, OnInit } from '@angular/core';
 import { Team } from 'src/models/team.model';
@@ -12,7 +13,7 @@ export class GameOverComponent implements OnInit {
   teams: Team[];
   winningTeam: Team;
 
-  constructor(private teamService: TeamService) {
+  constructor(private teamService: TeamService, private questionService: QuestionService) {
     this.teams = [];
     this.winningTeam = new Team();
   }
@@ -34,6 +35,7 @@ export class GameOverComponent implements OnInit {
   }
 
   onPlayAgain() {
+    this.questionService.isGameOn = false;
     this.teamService.resetScore();
   }
 }

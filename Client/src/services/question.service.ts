@@ -16,6 +16,8 @@ const httpOptions = {
 })
 export class QuestionService {
 
+  public isGameOn: boolean = false;
+
   private questionSubject: BehaviorSubject<Question>;
   public questionObservable: Observable<Question>;
 
@@ -34,12 +36,6 @@ export class QuestionService {
     return this.http.get(endpoint + 'question').pipe(
       map(this.extractData));
   }
-
-  /*
-  public get currentQuestionValue(): Question {
-    return this.questionSubject.value;
-  }
-  */
 
   public setQuestion(question: Question) {
     this.questionSubject.next(question);
