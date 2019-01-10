@@ -4,9 +4,9 @@
 
 A webapplication built by [Adam Hermansson](https://github.com/qurridutt), [John Iversen](https://github.com/johniversen), [Daniel Wikander](https://github.com/danielwikander) and [David Johansson](https://github.com/davidnjohansson) at Malmö University for a course in Web Services.
 
-### Installation
+## Installation
 
-*Following instructions are OS-agnostic*
+*These instructions are for Mac OSX and Windows.*
 
 1. Make sure you have `.NET runtime` installed on your machine. Recommended download can be found [here](https://dotnet.microsoft.com/download).
 
@@ -22,7 +22,7 @@ A webapplication built by [Adam Hermansson](https://github.com/qurridutt), [John
 
 6.  👏👍🤙🏅🎉🏆 Viola! Everything should now be prepared to run. Good job! 🏆🎉🏅🤙👍👏
 
-### How to run Lyriquiz
+## How to run Lyriquiz
 
 *Following instructions are OS-agnostic*
 
