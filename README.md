@@ -14,7 +14,7 @@ A web application built by [Adam Hermansson](https://github.com/qurridutt), [Joh
 
 2. Install [Node.js](https://nodejs.org/en/). Please make sure that you have at least version 10.x.x by running `node -v` in your terminal. If you have to update you can run `npm install -g npm@latest` to get the latest version.
 
-3. Install the Angular CLI by running `npm install -g @angular/cli` in your terminal. Please make sure that node.js (step 2) **must** be installed before this step.
+3. Install the Angular CLI by running `npm install -g @angular/cli` in your terminal. Please note that node.js (step 2) **must** be installed before this step.
 
 4. Clone this repo `git clone https://github.com/davidnjohansson/Lyriquiz.git`
 
