@@ -18,11 +18,13 @@ A web application built by [Adam Hermansson](https://github.com/qurridutt), [Joh
 
 4. Clone this repo `git clone https://github.com/davidnjohansson/Lyriquiz.git`
 
-5. Cd into Lyriquiz/Client and run `npm install`.
+5. `cd Lyriquiz/Server/Lyriquiz/Helpers` open `KeysExample.cs` and enter your API-keys and rename the file to `Keys.cs`
 
-6. 🥁🥁🥁 D R U M R O L L 🥁🥁🥁
+6. `cd Lyriquiz/Client` and run `npm install`.
 
-7. 👏👍🤙🏅🎉🏆 Viola! Everything should now be prepared to run. Good job! 🏆🎉🏅🤙👍👏
+7. 🥁🥁🥁 D R U M R O L L 🥁🥁🥁
+
+8. 👏👍🤙🏅🎉🏆 Viola! Everything should now be prepared to run. Good job! 🏆🎉🏅🤙👍👏
 
 ## How to run Lyriquiz
 
