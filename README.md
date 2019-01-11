@@ -6,9 +6,9 @@ A web application built by [Adam Hermansson](https://github.com/qurridutt), [Joh
 
 ## Installation
 
-*These instructions are for Mac OSX and Windows.*
+*Following instructions are OS-agnostic*
 
-1. Make sure you have `.NET runtime` installed on your machine. Recommended download can be found [here](https://dotnet.microsoft.com/download).
+1. Make sure you have `.NET SDK` installed on your machine. Recommended download can be found [here](https://dotnet.microsoft.com/download).
 
    Lyriquiz is using .NET Core 2.x so after your installation, or if you already have it installed, please run `dotnet --version` in your terminal to make sure you have a 2.x version installed.
 
