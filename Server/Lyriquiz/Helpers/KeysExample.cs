@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace Lyriquiz.Helpers
 {
-
-    public static class Keys
+    // RENAME THIS CLASS to Keys
+    public static class KeysExample
     {   
         // https://developer.spotify.com/
         public static string ClientId { get; set; } = "SPOTIFY CLIENT ID GOES HERE";

@@ -18,7 +18,7 @@ A web application built by [Adam Hermansson](https://github.com/qurridutt), [Joh
 
 4. Clone this repo `git clone https://github.com/davidnjohansson/Lyriquiz.git`
 
-5. `cd Lyriquiz/Server/Lyriquiz/Helpers` open `KeysExample.cs` and enter your API-keys and rename the file to `Keys.cs`
+5. `cd Lyriquiz/Server/Lyriquiz/Helpers` open `KeysExample.cs` and **follow the instructions in the file and then rename the file** to `Keys.cs`
 
 6. `cd Lyriquiz/Client` and run `npm install`.
 
