@@ -120,9 +120,8 @@ export class PlayComponent implements OnInit {
     for (var i = 0; i < this.teams.length; i++) {
       if (this.teams[i].score == 5) {
         return true;
-      } else {
-        return false;
       }
     }
+    return false;
   }
 }
