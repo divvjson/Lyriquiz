@@ -2,15 +2,12 @@
 {
     public class Question
     {
-        public string Artist { get; set; }
-        public string TrackId { get; set; }
-        public string Track { get; set; }
-        public string Photo { get; set; }
+        public Answer Answer { get; set; }
         public RelatedArtist[] RelatedArtists { get; set; }
-        public Lyrics Lyrics { get; set; }
 
         public Question()
         {
+            Answer = new Answer();
             RelatedArtists = new RelatedArtist[3];
 
             for (int i = 0; i < RelatedArtists.Length; i++)
