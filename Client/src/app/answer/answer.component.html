@@ -2,11 +2,11 @@
   <iframe [src]="getSpotifyUrl()" frameborder="0" width="250" height="80" allowtransparency="true" allow="encrypted-media"></iframe>
 
   <div *ngIf="correctAnswer; else wrongAnswer">
-    <p>{{ question.Artist }} is correct!</p>
+    <p>{{ question.Answer.Artist }} is correct!</p>
   </div>
 
   <ng-template #wrongAnswer>
-    <p>Nope that's wrong! {{ question.Artist }} is correct...</p>
+    <p>Nope that's wrong! {{ question.Answer.Artist }} is correct...</p>
   </ng-template>
 
   <h4>Who answered?</h4>

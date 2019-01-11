@@ -45,8 +45,8 @@ export class PlayComponent implements OnInit {
 
     // Add the "correct" artist
     let artist = new RelatedArtist();
-    artist.Artist = this.question.Artist;
-    artist.Photo = this.question.Photo;
+    artist.Artist = this.question.Answer.Artist;
+    artist.Photo = this.question.Answer.Photo;
     array.push(artist);
 
     // Add the "related" artists
@@ -59,7 +59,7 @@ export class PlayComponent implements OnInit {
 
     // Shuffle the artists
     this.artists = this.shuffleArtists(array);
-    this.speak(this.question.Lyrics.Result.Track.Text);
+    this.speak(this.question.Answer.Song.SongLyrics);
   }
 
   shuffleArtists(array: RelatedArtist[]) {
@@ -90,14 +90,14 @@ export class PlayComponent implements OnInit {
   onAnswer(answer: string) {
     this.speechSynthesis.cancel();
     let correctAnswer: boolean;
-    if (answer == this.question.Artist) {
+    if (answer == this.question.Answer.Artist) {
       correctAnswer = true;
     } else {
       correctAnswer = false;
     }
 
     let question = this.question;
-    let trackId = this.question.TrackId;
+    let trackId = this.question.Answer.Song.SongId;
 
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus = true;
