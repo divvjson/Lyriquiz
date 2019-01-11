@@ -2,7 +2,7 @@
 
 🔥🎤🎺🥁🎷🎸🎼🎸🎷🥁🎺🎤🔥
 
-A webapplication built by [Adam Hermansson](https://github.com/qurridutt), [John Iversen](https://github.com/johniversen), [Daniel Wikander](https://github.com/danielwikander) and [David Johansson](https://github.com/davidnjohansson) at Malmö University for a course in Web Services.
+A web application built by [Adam Hermansson](https://github.com/qurridutt), [John Iversen](https://github.com/johniversen), [Daniel Wikander](https://github.com/danielwikander) and [David Johansson](https://github.com/davidnjohansson) at Malmö University for a course in Web Services.
 
 ## Installation
 
@@ -16,11 +16,13 @@ A webapplication built by [Adam Hermansson](https://github.com/qurridutt), [John
 
 3. Install the Angular CLI by running `npm install -g @angular/cli` in your terminal. Please make sure that node.js (step 2) **must** be installed before this step.
 
-4. Cd into Lyriquiz/Client and run `npm install`.
+4. Clone this repo `git clone https://github.com/davidnjohansson/Lyriquiz.git`
 
-5. 🥁🥁🥁 D R U M R O L L 🥁🥁🥁
+5. Cd into Lyriquiz/Client and run `npm install`.
 
-6.  👏👍🤙🏅🎉🏆 Viola! Everything should now be prepared to run. Good job! 🏆🎉🏅🤙👍👏
+6. 🥁🥁🥁 D R U M R O L L 🥁🥁🥁
+
+7. 👏👍🤙🏅🎉🏆 Viola! Everything should now be prepared to run. Good job! 🏆🎉🏅🤙👍👏
 
 ## How to run Lyriquiz
 
