@@ -32,6 +32,7 @@ export class PlayComponent implements OnInit {
   }
 
   getQuestion() {
+    this.question = null;
     this.questionService.getQuestion().subscribe((response: Question) => {
       this.question = response;
       this.questionService.setQuestion(this.question);
@@ -111,6 +112,7 @@ export class PlayComponent implements OnInit {
         this.questionService.setQuestion(null);
         this.router.navigate(['game-over']);
       } else {
+        this.questionService.setQuestion(null);
         this.getQuestion();
       }
     });
