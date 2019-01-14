@@ -30,10 +30,12 @@ export class AnswerComponent implements OnInit {
     });
   }
 
+  // Sanitizes the string to an valid URL
   getSpotifyUrl() {
     return this.sanitizer.bypassSecurityTrustResourceUrl(this.unsanitizedUrl);
   }
 
+  // Changes the score for a team accordingly
   onTeamAnswered(team: Team) {
     this.teamService.changeScore(team.color, this.correctAnswer);
     this.dialogRef.close();

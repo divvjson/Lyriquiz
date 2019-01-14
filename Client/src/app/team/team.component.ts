@@ -21,11 +21,13 @@ export class TeamComponent implements OnInit {
 
   }
 
+  // Deletes the team from team list
   onDeleteTeam(color: string) {
     this.teamService.deleteTeam(color);
     this.dialogRef.close();
   }
 
+  // If game is on return true, else return false
   isGameOn(): boolean {
     if (this.questionService.isGameOn) {
       return true;

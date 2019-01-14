@@ -26,6 +26,7 @@ export class GameOverComponent implements OnInit {
     this.setWinner();
   }
 
+  // Determines which team is the winner, first to 5 wins
   setWinner() {
     for (var i = 0; i < this.teams.length; i++) {
       if (this.teams[i].score == 5) {
@@ -34,6 +35,7 @@ export class GameOverComponent implements OnInit {
     }
   }
 
+  // Resets the score and navigates user back to start
   onPlayAgain() {
     this.questionService.isGameOn = false;
     this.teamService.resetScore();

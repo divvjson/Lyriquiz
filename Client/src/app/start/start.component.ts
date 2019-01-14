@@ -21,24 +21,29 @@ export class StartComponent implements OnInit {
 
   }
 
+  // Adds a member to the create team list
   add(member: string) {
     this.members.push(member);
     this.member = null;
   }
 
+  // Removes a member from the create team list
   remove(selected: number) {
     this.members.splice(selected, 1);
   }
 
+  // Determines which member in the create team list is selected
   setSelected(index: number) {
     this.selected = index;
   }
 
+  // Calls Team Service to create a team base on the create team list
   onCreateTeam() {
     this.teamService.createTeam(this.members);
     this.members.length = 0;
   }
 
+  // Determines if there's sufficient amount of teams (at least 2) to play
   sufficientAmountOfTeams(): boolean {
     if (this.teamService.getNumberOfTeams() >= 2) {
       return true;
@@ -47,6 +52,7 @@ export class StartComponent implements OnInit {
     }
   }
 
+  // Game is on
   onPlay() {
     this.questionService.isGameOn = true;
   }

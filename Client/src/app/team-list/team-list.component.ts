@@ -3,7 +3,6 @@ import { TeamService } from 'src/services/team.service';
 import { Team } from 'src/models/team.model';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { TeamComponent } from '../team/team.component';
-import { AnswerComponent } from '../answer/answer.component';
 
 @Component({
   selector: 'app-team-list',
@@ -25,6 +24,7 @@ export class TeamListComponent implements OnInit {
     });
   }
 
+  // Opens a dialog which presents a detailed view of the team
   showTeamDetails(team: Team) {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.autoFocus = true;

@@ -32,11 +32,13 @@ export class QuestionService {
     return body || {};
   }
 
+  // Retrieves a question from the backend API
   getQuestion(): Observable<any> {
     return this.http.get(endpoint + 'question').pipe(
       map(this.extractData));
   }
 
+  // Sets the Question object
   public setQuestion(question: Question) {
     this.questionSubject.next(question);
   }

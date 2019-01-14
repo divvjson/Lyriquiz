@@ -31,6 +31,7 @@ export class PlayComponent implements OnInit {
     this.getQuestion();
   }
 
+  // Clears question object and fetches new question from Question Service
   getQuestion() {
     this.question = null;
     this.questionService.getQuestion().subscribe((response: Question) => {
@@ -82,12 +83,16 @@ export class PlayComponent implements OnInit {
     return array;
   }
 
+  // Gives a lyric to the Speech synthesizer which speaks it
   speak(lyrics: string) {
     let sayThis = new SpeechSynthesisUtterance(lyrics);
+    sayThis.lang = "en-US";
     sayThis.rate = 0.7;
     this.speechSynthesis.speak(sayThis);
   }
 
+  // Cancels the speech, sets the corect answer, prompts the user with a dialog where he/she can answer
+  // If game is over it routes to the Game Over component, else it fetches a new question
   onAnswer(answer: string) {
     this.speechSynthesis.cancel();
     let correctAnswer: boolean;
@@ -118,6 +123,7 @@ export class PlayComponent implements OnInit {
     });
   }
 
+  // Determines if any team has a score of 5, if yes return true, else return false
   private isGameOver(): boolean {
     for (var i = 0; i < this.teams.length; i++) {
       if (this.teams[i].score == 5) {
