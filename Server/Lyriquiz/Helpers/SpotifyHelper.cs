@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Lyriquiz.Helpers
 {
+    // Handles spotify connection.
     public sealed class SpotifyHelper
     {
         private static SpotifyHelper instance = null;
@@ -17,6 +18,7 @@ namespace Lyriquiz.Helpers
         {
         }
 
+        // Returns an instance of SpotifyHelper
         public static SpotifyHelper Instance
         {
             get
@@ -32,6 +34,7 @@ namespace Lyriquiz.Helpers
             }
         }
 
+        // Initiates spotify connection
         public async void InitApiAsync()
         {
             if (Api == null)

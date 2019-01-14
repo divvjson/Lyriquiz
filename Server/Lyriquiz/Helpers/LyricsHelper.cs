@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lyriquiz.Helpers
 {
+    // Handles lyrics from the lyrics api
     public sealed class LyricsHelper
     {
         private static LyricsHelper instance = null;
@@ -19,6 +20,7 @@ namespace Lyriquiz.Helpers
         {
         }
 
+        // Returns an instance of LyricsHelper
         public static LyricsHelper Instance
         {
             get
@@ -34,6 +36,7 @@ namespace Lyriquiz.Helpers
             }
         }
 
+        // Initiates an http client
         public void InitHttpClient()
         {
             if (HttpClient == null)
@@ -48,6 +51,7 @@ namespace Lyriquiz.Helpers
             }
         }
 
+        // Retrieves lyrics from the lyrics api.
         public async Task<Lyrics> GetLyricsAsync(string artistName, string trackName)
         {
             try

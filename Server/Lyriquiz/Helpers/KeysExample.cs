@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Lyriquiz.Helpers
 {
+    // Holds keys for the different APIs
     // RENAME THIS CLASS to Keys
     public static class KeysExample
     {   

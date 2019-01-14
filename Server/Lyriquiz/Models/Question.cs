@@ -1,5 +1,8 @@
 ﻿namespace Lyriquiz.Models
 {
+    // The final 'Question' returned by the API.
+    // 'Answer' represents the correct answer in the question
+    // 'RelatedArtist[]' represents a list of 3 related artists 
     public class Question
     {
         public Answer Answer { get; set; }
