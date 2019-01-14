@@ -345,3 +345,6 @@ healthchecksdb
 
 # API Keys
 Keys.cs
+
+# Angular Build
+dist/

@@ -4,7 +4,7 @@ import { Observable, of, BehaviorSubject } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators';
 import { Question } from 'src/models/question.model';
 
-const endpoint = 'http://localhost:5000/api/';
+const endpoint = 'https://lyriquiz.azurewebsites.net/api/';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json'

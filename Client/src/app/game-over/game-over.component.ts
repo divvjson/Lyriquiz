@@ -2,6 +2,8 @@ import { QuestionService } from './../../services/question.service';
 import { TeamService } from 'src/services/team.service';
 import { Component, OnInit } from '@angular/core';
 import { Team } from 'src/models/team.model';
+import { MatDialogConfig, MatDialog } from '@angular/material/dialog';
+import { TeamComponent } from '../team/team.component';
 
 @Component({
   selector: 'app-game-over',
@@ -13,7 +15,7 @@ export class GameOverComponent implements OnInit {
   teams: Team[];
   winningTeam: Team;
 
-  constructor(private teamService: TeamService, private questionService: QuestionService) {
+  constructor(private teamService: TeamService, private questionService: QuestionService, private teamDialog: MatDialog) {
     this.teams = [];
     this.winningTeam = new Team();
   }
@@ -39,5 +41,15 @@ export class GameOverComponent implements OnInit {
   onPlayAgain() {
     this.questionService.isGameOn = false;
     this.teamService.resetScore();
+  }
+
+  // Opens a dialog which presents a detailed view of the team
+  showTeamDetails(team: Team) {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.autoFocus = true;
+    dialogConfig.width = "25%";
+    dialogConfig.data = { team };
+
+    this.teamDialog.open(TeamComponent, dialogConfig);
   }
 }

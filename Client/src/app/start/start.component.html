@@ -3,7 +3,8 @@
 
   <form (ngSubmit)="onCreateTeam()" autocomplete="off">
     <div class="form-group">
-      <input [(ngModel)]="member" name="member" type="text" class="form-control" placeholder="Name">
+      <input (keydown)="onKeyDown($event, member)" [(ngModel)]="member" name="member" type="text" class="form-control"
+        placeholder="Name">
     </div>
 
     <div class="form-group">

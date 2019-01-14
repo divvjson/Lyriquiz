@@ -227,3 +227,7 @@
   background-color: white;
   border: none;
 }
+
+.list-group-item {
+  cursor: pointer;
+}

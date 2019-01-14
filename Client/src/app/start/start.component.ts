@@ -21,6 +21,14 @@ export class StartComponent implements OnInit {
 
   }
 
+  onKeyDown(event, member: string) {
+    if (event.key === "Enter" && member != null && member.length != 0) {
+      event.preventDefault();
+      this.members.push(member);
+      this.member = null;
+    }
+  }
+
   // Adds a member to the create team list
   add(member: string) {
     this.members.push(member);
