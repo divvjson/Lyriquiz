@@ -1,5 +1,6 @@
 ﻿namespace Lyriquiz.Models
 {
+    // Represents the 'Answer' part of the API
     public class Answer
     {
         
@@ -12,7 +13,8 @@
             Song = new Song();
         }
     }
-
+    
+    // Represents the correct track in the quiz question
     public class Song
     {
         public string SongName { get; set; }
@@ -26,7 +28,7 @@
         }
     }
 
-
+    // Represents language of the track.
     public class Language
     {
         public string LanguageCode { get; set; }

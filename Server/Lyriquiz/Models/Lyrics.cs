@@ -1,5 +1,6 @@
 ﻿namespace Lyriquiz.Models
 {
+    // Represents the response from the lyrics api
     public class Lyrics
     {
         public Result Result { get; set; }

@@ -10,6 +10,7 @@ using System.Text.RegularExpressions;
 
 namespace Lyriquiz.Controllers
 {
+    // Handles api-requests, generates answers and recommended artists from spotify.
     [Route("api/[controller]")]
     public class QuestionController : Controller
     {
@@ -37,6 +38,7 @@ namespace Lyriquiz.Controllers
             return Ok(JsonConvert.SerializeObject(Question));
         }
 
+        // Generates a question for the API.
         private async Task<Question> GenerateQuestionAsync()
         {
             // Retrieve recommendations from Spotify
@@ -98,7 +100,7 @@ namespace Lyriquiz.Controllers
 
             return Question;
         }
-
+        // Gets recommendations from spotify.
         private Recommendations GenerateRecommendations()
         {
             List<string> genreSeed = new List<string>
