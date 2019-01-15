@@ -18,7 +18,3 @@
     width: 35%;
     margin: auto;
 }
-
-input:focus, button:focus {
-    background-color: yellow;
-}
