@@ -4,6 +4,8 @@
 
 A web application built by [Adam Hermansson](https://github.com/qurridutt), [John Iversen](https://github.com/johniversen), [Daniel Wikander](https://github.com/danielwikander) and [David Johansson](https://github.com/davidnjohansson) at Malmö University for a course in Web Services.
 
+A live version is available at: http://www.lyriquiz.com/
+
 ## Installation
 
 *Following instructions are OS-agnostic*
