@@ -8,16 +8,18 @@
             {{ artist.Artist }}
           </p>
         </div>
-
+      </div>
+    </div>
+    <div class="row row-skip">
+      <div class="col-12 col-skip">
+        <button class="btn btn-lg btn-skip" type="button" (click)="onSkip()">Skip</button>
       </div>
     </div>
   </div>
 
   <ng-template #loading>
-    <div class="loader">
-      <div class="inner one"></div>
-      <div class="inner two"></div>
-      <div class="inner three"></div>
+    <div class="mat-spinner">
+      <mat-spinner [diameter]="100" class="mat-spinner-color"></mat-spinner>
     </div>
   </ng-template>
 </div>

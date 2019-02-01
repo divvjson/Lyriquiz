@@ -13,7 +13,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./play.component.css']
 })
 export class PlayComponent implements OnInit {
-
   question: Question;
   artists: RelatedArtist[];
   speechSynthesis: any = window.speechSynthesis;
@@ -131,5 +130,12 @@ export class PlayComponent implements OnInit {
       }
     }
     return false;
+  }
+
+  // An option for the players to skip the current question if no one wants to answer
+  onSkip() {
+    this.speechSynthesis.cancel();
+    this.questionService.setQuestion(null);
+    this.getQuestion();
   }
 }
